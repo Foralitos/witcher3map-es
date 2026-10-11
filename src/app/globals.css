@@ -79,3 +79,7 @@ body {
 .witcher-map .leaflet-bar a:hover {
 	color: #f0cb0b;
 }
+.witcher-map.adding-note.leaflet-container,
+.witcher-map.adding-note .leaflet-interactive {
+	cursor: crosshair;
+}

@@ -44,3 +44,8 @@ export function markerKey([lat, lng]: LatLng): string {
 
 export const hiddenMarkersKey = (map: MapData) => `markers-${map.path}-hidden`;
 export const hiddenCategoriesKey = (map: MapData) => `categories-${map.path}-hidden`;
+// Mismo formato que el legacy: notes<mapa> = [{ key, lat, lng, label, title, text }]
+export const notesKey = (map: MapData) => `notes${map.path}`;
+
+export type Note = { key: string; lat: number; lng: number; label: string; title: string; text: string };
+export const noteKey = (lat: number, lng: number) => `${lat.toFixed(3)}_${lng.toFixed(3)}`;

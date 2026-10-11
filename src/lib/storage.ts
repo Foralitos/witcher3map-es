@@ -71,3 +71,35 @@ export function useStoredList(key: string): [string[], (next: string[]) => void]
 export function readStoredList(key: string): string[] {
 	return readList(key);
 }
+
+// Igual que useStoredList pero para arreglos de objetos (notas)
+const jsonCache = new Map<string, { raw: string | null; value: unknown[] }>();
+function readJson<T>(key: string): T[] {
+	const raw = read(key);
+	const cached = jsonCache.get(key);
+	if (cached && cached.raw === raw) return cached.value as T[];
+	let value: unknown[] = [];
+	try {
+		const parsed: unknown = raw ? JSON.parse(raw) : [];
+		if (Array.isArray(parsed)) value = parsed;
+	} catch {
+		value = [];
+	}
+	jsonCache.set(key, { raw, value });
+	return value as T[];
+}
+const EMPTY_JSON: never[] = [];
+
+export function useStoredArray<T>(key: string): [T[], (next: T[]) => void] {
+	const value = useSyncExternalStore(
+		subscribe,
+		() => readJson<T>(key),
+		() => EMPTY_JSON,
+	);
+	const set = useCallback((next: T[]) => writeStorage(key, JSON.stringify(next)), [key]);
+	return [value, set];
+}
+
+export function readStoredArray<T>(key: string): T[] {
+	return readJson<T>(key);
+}

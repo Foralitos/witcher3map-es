@@ -2,7 +2,7 @@
 import Fuse from 'fuse.js';
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
-import { ICONS, hiddenMarkersKey, type LatLng, type MapData } from '@/data/maps';
+import { ICONS, hiddenMarkersKey, markerKey, type LatLng, type MapData } from '@/data/maps';
 import { renderTemplate, t, type TextOptions } from '@/i18n/t';
 import { setLang, setNamesFirst } from '@/lib/settings';
 import { writeStorage } from '@/lib/storage';
@@ -12,13 +12,28 @@ type Props = {
 	text: TextOptions;
 	hiddenCategories: string[];
 	setHiddenCategories: (next: string[]) => void;
+	hiddenMarkers: string[];
 	hideMonsters: boolean;
+	sfw: boolean;
+	addingNote: boolean;
+	onToggleAddingNote: () => void;
 	onClose: () => void;
 };
 
 type SearchItem = { title: string; type: string; coords: LatLng };
 
-export default function Sidebar({ map, text, hiddenCategories, setHiddenCategories, hideMonsters, onClose }: Props) {
+export default function Sidebar({
+	map,
+	text,
+	hiddenCategories,
+	setHiddenCategories,
+	hiddenMarkers,
+	hideMonsters,
+	sfw,
+	addingNote,
+	onToggleAddingNote,
+	onClose,
+}: Props) {
 	const [query, setQuery] = useState('');
 	const tr = (key: string) => t(key, text);
 
@@ -84,7 +99,12 @@ export default function Sidebar({ map, text, hiddenCategories, setHiddenCategori
 
 			<ul className="mt-4 space-y-1">
 				{map.sidebar.map(({ type, key }) => {
-					const count = map.categories[type].reduce((n, m) => n + m.coords.length, 0);
+					// Como el original: el contador descuenta los marcadores que ya ocultaste
+					const count = map.categories[type].reduce(
+						(n, m) => n + m.coords.filter((c) => !hiddenMarkers.includes(markerKey(c))).length,
+						0,
+					);
+					const name = type === 'brothel' && sfw ? 'sidebar.loveInterest' : key;
 					const hidden = hiddenCategories.includes(type);
 					return (
 						<li key={type}>
@@ -94,7 +114,7 @@ export default function Sidebar({ map, text, hiddenCategories, setHiddenCategori
 							>
 								{/* eslint-disable-next-line @next/next/no-img-element */}
 								<img src={`/icons/${ICONS[type].file}.png`} alt="" className="h-7 w-7 object-contain" />
-								<span className="flex-1" dangerouslySetInnerHTML={{ __html: tr(key) }} />
+								<span className="flex-1" dangerouslySetInnerHTML={{ __html: tr(name) }} />
 								<span className="text-xs text-gold-dim">{count}</span>
 							</button>
 						</li>
@@ -127,6 +147,33 @@ export default function Sidebar({ map, text, hiddenCategories, setHiddenCategori
 						{tr('controls.resetInvisible')}
 					</button>
 				</li>
+				<li>
+					<button className={addingNote ? 'text-gold' : 'hover:text-gold'} onClick={onToggleAddingNote}>
+						{tr(addingNote ? 'controls.cancelNoteButton' : 'controls.addNoteButton')}
+					</button>
+				</li>
+				{map.categories.brothel && (
+					<li>
+						<button
+							className="hover:text-gold"
+							onClick={() => {
+								if (window.confirm(tr(sfw ? 'misc.nsfwUndo' : 'misc.nsfwConfirm'))) writeStorage('sfw', sfw ? null : 'true');
+							}}
+						>
+							{sfw ? `${tr('sidebar.brothel')} ↺` : `${tr('sidebar.brothel')} → ${tr('sidebar.loveInterest')}`}
+						</button>
+					</li>
+				)}
+				<li>
+					<button className="hover:text-gold" onClick={() => backupData(tr)}>
+						{tr('controls.backupDataButton')}
+					</button>
+					{' · '}
+					<label className="cursor-pointer hover:text-gold">
+						{tr('controls.restoreDataButton')}
+						<input type="file" accept="application/json,.json" className="hidden" onChange={(e) => restoreData(e, tr)} />
+					</label>
+				</li>
 			</ul>
 
 			<div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-gold-dim">
@@ -156,4 +203,33 @@ export default function Sidebar({ map, text, hiddenCategories, setHiddenCategori
 			</p>
 		</aside>
 	);
+}
+
+// Respaldo compatible con el original: todo el localStorage como JSON
+function backupData(tr: (key: string) => string) {
+	const date = new Date().toISOString().slice(0, 10);
+	const fileName = `witcher3map_backup_${date}.json`;
+	if (!window.confirm(tr('controls.backupSave').replace('__fileName__', fileName))) return;
+	const blob = new Blob([JSON.stringify({ ...window.localStorage })], { type: 'application/json' });
+	const url = URL.createObjectURL(blob);
+	const a = document.createElement('a');
+	a.href = url;
+	a.download = fileName;
+	a.click();
+	URL.revokeObjectURL(url);
+}
+
+function restoreData(e: React.ChangeEvent<HTMLInputElement>, tr: (key: string) => string) {
+	const file = e.target.files?.[0];
+	if (!file) return;
+	file
+		.text()
+		.then((content) => {
+			const data: unknown = JSON.parse(content);
+			if (!data || typeof data !== 'object' || Array.isArray(data)) throw new Error('formato inválido');
+			for (const [key, value] of Object.entries(data)) writeStorage(key, String(value));
+			window.alert(tr('controls.backupLoadSuccess'));
+		})
+		.catch(() => window.alert(tr('controls.backupLoadFail')));
+	e.target.value = '';
 }
