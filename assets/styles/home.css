@@ -282,3 +282,15 @@ i.close-search {
 		max-width: 800px;
 	}
 }
+div#names-first {
+	margin-top: 10px;
+	font-size: 12px;
+}
+div#names-first a {
+	color: #635540;
+	text-decoration: none;
+}
+div#names-first a:hover {
+	color: #907854;
+	text-decoration: underline;
+}

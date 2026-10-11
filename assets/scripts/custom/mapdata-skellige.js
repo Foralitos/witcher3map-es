@@ -346,7 +346,7 @@ window.mapdata_skellige = {
 	}, {
 		coords: [[5.791, -17.754]],
 		label: $.t("guarded.label"),
-		popup: $.t("guarded.desc", {monster: '(lvl 13<span> ' + $.t("s:monsters.gargoyles") + '</span> and lvl 30<span> ' + $.t("s:monsters.elemental.ice") + '</span>)'})
+		popup: $.t("guarded.desc", {monster: '(lvl 13<span> ' + $.t("s:monsters.gargoyles") + '</span> ' + $.t("misc.and") + ' lvl 30<span> ' + $.t("s:monsters.elemental.ice") + '</span>)'})
 	}, {
 		coords: [[-21.678, -32.717]],
 		label: $.t("guarded.label"),
@@ -711,7 +711,7 @@ window.mapdata_skellige = {
 	}, {
 		coords: [[-50.078, -33.245]],
 		label: $.t("monsterden.label"),
-		popup: $.t("monsterden.desc", {monster: '(lvl 8<span> ' + $.t("s:monsters.nekkers") + '</span> and lvl 12<span> ' + $.t("s:monsters.nekkerWarrior") + '</span>)'})
+		popup: $.t("monsterden.desc", {monster: '(lvl 8<span> ' + $.t("s:monsters.nekkers") + '</span> ' + $.t("misc.and") + ' lvl 12<span> ' + $.t("s:monsters.nekkerWarrior") + '</span>)'})
 	}, { // An Skellig
 		coords: [[-10.401, 1.758]],
 		label: $.t("monsterden.label"),
@@ -742,7 +742,7 @@ window.mapdata_skellige = {
 	}, { // Ard Skellig
 		coords: [[-59.120, -4.131]],
 		label: $.t("monsternest.label"),
-		popup: $.t("monsternest.desc", {monster: '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span> and lvl 19<span> ' + $.t("s:monsters.echidna") + '</span>)'})
+		popup: $.t("monsternest.desc", {monster: '(lvl 13<span> ' + $.t("s:monsters.sirens") + '</span> ' + $.t("misc.and") + ' lvl 19<span> ' + $.t("s:monsters.echidna") + '</span>)'})
 	}],
 
 	// Notice Board
@@ -1291,7 +1291,7 @@ window.mapdata_skellige = {
 	}, {
 		coords: [[53.697, -55.371]],
 		label: $.t("smugglers.label"),
-		popup: $.t("smugglers.desc") + "(lvl 19<span> " + $.t("s:monsters.echidna") + "</span> and lvl 13<span> " + $.t("s:monsters.sirens") + "</span>)"
+		popup: $.t("smugglers.desc") + "(lvl 19<span> " + $.t("s:monsters.echidna") + "</span> " + $.t("misc.and") + " lvl 13<span> " + $.t("s:monsters.sirens") + "</span>)"
 	}, {
 		coords: [[36.809, -62.007]],
 		label: $.t("smugglers.label"),

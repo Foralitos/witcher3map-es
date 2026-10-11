@@ -1,0 +1,73 @@
+{
+	"gwent": {
+		"label": {
+			"player": "Jugador de gwynt"
+		},
+		"desc": {
+			"player": "Apuesta tus monedas, ganadas con tanto esfuerzo, jugando al gwynt aquí. ",
+			"warn": "Advertencia: este jugador puede desaparecer más adelante en el juego. "
+		}
+	},
+	"innkeep": {
+		"inns": {
+			"whiteOrchardInn": "Posada de Huerto Blanco"
+		},
+		"popup": "Posadero",
+		"desc": {
+			"foodDrinkAndGwent": "Vende cartas de gwynt, comida y bebida. "
+		}
+	},
+	"misc": {
+		"liberated": "Este mercader aparece después de liberar la zona. ",
+		"disappears": "Desaparece al avanzar en las misiones principales."
+	},
+	"poi": {
+		"label": {
+			"lootableBattlefield": "Campo de batalla saqueable",
+			"serpentineSteelSword": "Espada de acero serpentina",
+			"serpentineSilverSword": "Espada de plata serpentina",
+			"crystalSkull": "Calavera de cristal"
+		},
+		"desc": {
+			"lootableBattlefield": "Puedes saquear este campo de batalla para conseguir monedas fácilmente al inicio del juego",
+			"serpentineSteelSword": "Diagrama de la Escuela de la Víbora (1/2)",
+			"serpentineSilverSword": "Diagrama de la Escuela de la Víbora (2/2), debajo de la capilla",
+			"crystalSkull": "Aparece en el video de introducción; desbloquea un diálogo con Yennefer en la misión 'El último deseo'. Solo puedes recogerla si todavía no has salido de Huerto Blanco"
+		}
+	},
+	"shopkeeper": {
+		"label": {
+			"shopkeeper": "Comerciante"
+		},
+		"desc": {
+			"gwentCraftingAndHorse": "Vende cartas de gwynt, materiales de fabricación y equipo temerio: anteojeras, silla de montar, alforjas y armadura",
+			"alchemyRunesAndFood": "Vende piedras rúnicas, materiales de alquimia y comida"
+		}
+	},
+	"signpost": {
+		"label": {
+			"abandonedVillage": "Aldea abandonada",
+			"brokenBridge": "Puente roto",
+			"woesongBridge": "Puente de Canciontriste",
+			"sawmill": "Aserradero",
+			"mill": "Molino",
+			"nilfgaardianGarrison": "Guarnición nilfgaardiana",
+			"cacklerBridge": "Puente Risueño",
+			"crossroads": "Cruce",
+			"ford": "Vado",
+			"ransackedVillage": "Aldea saqueada"
+		},
+		"desc": {
+			"abandonedVillage": "Hace unos años, un grupo de hombres armados marchó sobre este asentamiento. Masacraron a sus habitantes y quemaron sus casas. Desde aquel día negro y sangriento, no ha vuelto a vivir aquí ni un alma",
+			"brokenBridge": "Las tropas temerias destruyeron este puente al retirarse durante el ataque nilfgaardiano. Para empezar, ya estaba mal construido. Mejor así",
+			"woesongBridge": "Recibe su nombre por una muchacha que solía pararse en el puente a cantar mientras esperaba el regreso de su amado",
+			"sawmill": "Huerto Blanco es famoso no solo por su fruta de primera, sino también por la madera de altísima calidad, ideal para muebles, que se tala en el Bosque Zorruno",
+			"mill": "Las carretas traen grano de todas las aldeas de los alrededores al molino de Huerto Blanco",
+			"nilfgaardianGarrison": "Este punto estratégico protege el principal cruce del río de Huerto Blanco. Las tropas nilfgaardianas lo han tomado",
+			"cacklerBridge": "Puente llamado así en honor a una mujer que enloqueció por un amor no correspondido. Después de que se le rompiera el corazón, pasaba los días corriendo de un lado a otro de este puente mientras reía histéricamente",
+			"crossroads": "Aquí el camino se divide. Un ramal lleva a Wyzima y el otro a Novigrad",
+			"ford": "Antes de la guerra, mercaderes y viajeros cruzaban el río por aquí. Ahora solo los soldados nilfgaardianos recorren este camino",
+			"ransackedVillage": "Una banda de soldados atacó esta aldea una madrugada. Mataron a la mayoría de los aldeanos en sus camas, y los pocos afortunados que alcanzaron a huir al bosque no tuvieron nada a qué regresar"
+		}
+	}
+}

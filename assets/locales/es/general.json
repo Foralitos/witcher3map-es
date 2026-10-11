@@ -1,0 +1,589 @@
+{
+	"maps": {
+		"velen": "Velen y Novigrado",
+		"skellige": "Islas Skellige",
+		"white_orchard": "Huerto Blanco",
+		"kaer_morhen": "Kaer Morhen",
+		"toussaint": "Toussaint"
+	},
+	"home": {
+		"tagline": "Mapas interactivos no oficiales de The Witcher 3<br>(Actualmente en desarrollo)",
+		"resultsFound": "resultado(s) encontrado(s).",
+		"searchPlaceholder": "Escribe tu búsqueda..."
+	},
+	"notes": {
+		"label": "Etiqueta:",
+		"title": "Título:",
+		"note": "Nota:",
+		"enterLabel": "Escribe la etiqueta del mapa...",
+		"enterTitle": "Escribe el título de la nota...",
+		"enterText": "Escribe el texto de la nota...",
+		"saveNote": "Guardar nota",
+		"deleteNote": "Borrar nota"
+	},
+	"sidebar": {
+		"returnToMapSelection": "Volver a la selección de mapas",
+		"alchemy": "Suministros de alquimia",
+		"abandoned": "Lugar abandonado",
+		"armourer": "Armero",
+		"armourerstable": "Mesa de armero",
+		"banditcamp": "Campamento de bandidos",
+		"barber": "Barbero",
+		"blacksmith": "Herrero",
+		"brothel": "Burdel",
+		"loveInterest": "Interés amoroso",
+		"entrance": "Entrada",
+		"grindstone": "Piedra de afilar",
+		"guarded": "Tesoro custodiado",
+		"gwent": "Jugador de gwynt",
+		"harbor": "Puerto",
+		"hansebase": "Base de la hansa",
+		"herbalist": "Herborista",
+		"hidden": "Tesoro oculto",
+		"innkeep": "Tabernero",
+		"kid": "Caballero en apuros",
+		"monsternest": "Nido de monstruos",
+		"monsterden": "Guarida de monstruos",
+		"notice": "Tablón de anuncios",
+		"pid": "Persona en apuros",
+		"pop": "Lugar de poder",
+		"poi": "Punto de interés",
+		"signalfire": "Hoguera de señales",
+		"signpost": "Poste indicador",
+		"shopkeeper": "Mercader",
+		"smugglers": "Alijo de contrabandistas",
+		"spoils": "Botín de guerra",
+		"vintnercontract": "Contrato de viticultor",
+		"vineyardinfestation": "Plaga en el viñedo"
+	},
+	"controls": {
+		"show": "Mostrar todo",
+		"hide": "Ocultar todo",
+		"showCounts": "Mostrar conteos",
+		"hideCounts": "Ocultar conteos",
+		"resetInvisible": "Restablecer ocultos",
+		"resetInvisConfirm": "Esto restablecerá todos los marcadores ocultos/marcados a su estado predeterminado (visibles). ¿Estás seguro?",
+		"hideMonsters": "Ocultar monstruos",
+		"showMonsters": "Mostrar monstruos",
+		"helpFeatures": "Funciones y ayuda",
+		"credits": "Créditos",
+		"backupSave": "Esto descargará una copia de seguridad de toda la configuración del mapa de Witcher 3.\n\nEl archivo se guardará como: __fileName__\n\n¿Estás seguro?",
+		"backupLoad": "Restaura tu configuración:",
+		"backupLoadSuccess": "¡Restauración de datos completada!",
+		"backupLoadFail": "La restauración falló, revisa tu archivo",
+		"backupHtmlFail": "Lo sentimos.  No es posible restaurar.  Este navegador no es compatible con las API de archivos de HTML5.",
+		"zoomInButton": "Acercar",
+		"zoomOutButton": "Alejar",
+		"searchButton": "Buscar...",
+		"backupDataButton": "Respaldar datos",
+		"restoreDataButton": "Restaurar datos",
+		"centerMarkerButton": "Centrar marcador resaltado",
+		"addNoteButton": "Agregar nota",
+		"cancelNoteButton": "Cancelar nota",
+		"viewFullscreenButton": "Ver en pantalla completa",
+		"exitFullscreenButton": "Salir de pantalla completa"
+	},
+	"credits": {
+		"botCreated": "Creado por __untamed0__, con licencia __license__",
+		"botHelp": "Con ayuda de __mcarver__ y otros __contributors__. Gracias a __designGears__ y __hhrhhr__ por la extracción de mapas y recursos. Para ver la lista completa de librerías de JavaScript usadas, __jsCredits__.",
+		"botAssets": "Witcher 3, el logo, los íconos, el mapa y los textos son propiedad de __cdpr__"
+	},
+	"misc": {
+		"contribute": "¡Trabajo en progreso! Se agradece la ayuda en __link__",
+		"discuss": "¿Comentarios o sugerencias? Coméntalo en __link__",
+		"helpTranslate": "¿Quieres ayudar o mejorar las traducciones?",
+		"portraitWarn": "Nota: el mapa se ve mejor en modo horizontal, toca para cerrar",
+		"loveInterestDesc": "Encuentra aquí a tu interés amoroso",
+		"nsfwConfirm": "Esto cambiará 'Burdel' por 'Interés amoroso'. ¿Estás seguro?",
+		"nsfwUndo": "¿Seguro que quieres volver atrás?",
+		"and": "y",
+		"availableAfterMasterArmorers": "Disponible después de la misión &#39;Maestros armeros&#39; (nv. 26). "
+	},
+	"abandoned": {
+		"label": "Lugar abandonado",
+		"desc": "Un lugar abandonado por ataques de monstruos o bandidos. Una vez eliminado el peligro, volverá a llenarse de vida"
+	},
+	"armourer": {
+		"labelAmateur": "Armero aprendiz",
+		"labelJourneyman": "Armero oficial",
+		"labelMaster": "Maestro armero",
+		"desc": "Aquí puedes fabricar armaduras, reparar equipo dañado, desmontar equipo para obtener materiales o quitar mejoras de las ranuras."
+	},
+	"armourerstable": {
+		"label": "Mesa de armero",
+		"desc": "Las mesas de armero aumentan la armadura de tu equipo durante un tiempo limitado."
+	},
+	"banditcamp": {
+		"label": "Campamento de bandidos",
+		"desc": "Un grupo de bandidos peligrosos ha acampado aquí. "
+	},
+	"barber": {
+		"label": "Barbero",
+		"desc": "Visita a los barberos para afeitarte o cambiar de corte de pelo. "
+	},
+	"blacksmith": {
+		"labelAmateur": "Herrero aprendiz",
+		"labelJourneyman": "Herrero oficial",
+		"labelMaster": "Maestro herrero",
+		"desc": "Aquí puedes fabricar armas, reparar equipo dañado, desmontar equipo para obtener materiales o quitar mejoras de las ranuras."
+	},
+	"boat": {
+		"label": "Bote",
+		"desc": "Puedes usar botes para cruzar masas de agua"
+	},
+	"entrance": {
+		"label": "Entrada",
+		"desc": "Entrada a una cueva o ruinas"
+	},
+	"entranceunderwatercave": {
+		"label": "Cueva submarina",
+		"desc": "Entrada submarina a una cueva"
+	},
+	"grindstone": {
+		"label": "Piedra de afilar",
+		"desc": "Una hoja afilada aquí causará más daño"
+	},
+	"guarded": {
+		"label": "Tesoro custodiado",
+		"desc": "Un monstruo especialmente poderoso __monster__ custodia aquí un alijo valioso"
+	},
+	"harbor": {
+		"label": "Puerto",
+		"desc": "Un lugar donde puedes encontrar un bote; aquí reaparecen los botes"
+	},
+	"herbalist": {
+		"label": "Herborista",
+		"desc": "Aquí puedes comprar ingredientes de alquimia"
+	},
+	"hidden": {
+		"label": "Tesoro oculto",
+		"desc": "Un alijo oculto de objetos valiosos",
+		"guarded": "Un alijo oculto de objetos valiosos (custodiado por __monster__)"
+	},
+	"monsterden": {
+		"label": "Guarida de monstruos",
+		"desc": "Un lugar infestado de monstruos. Una preocupación constante para quienes viven cerca __monster__"
+	},
+	"monsternest": {
+		"label": "Nido de monstruos",
+		"desc": "Destruye los nidos de monstruos con bombas de Metralla o Estrella danzante __monster__"
+	},
+	"monsters": {
+		"alghoul": "Alghul",
+		"alghouls": "Alghuls",
+		"arachas": {
+			"armored": "Arachas con coraza",
+			"venomous": "Arachas venenoso"
+		},
+		"archgriffin": "Archigrifo",
+		"bandits": "Bandidos",
+		"basilisk": "Basilisco",
+		"bear": "Oso",
+		"bears": "Osos",
+		"cyclops": "Cíclope",
+		"drowners": "Sumergidos",
+		"echidna": "Ekhidna",
+		"elemental": {
+			"earth": "Elemental de tierra",
+			"fire": "Elemental de fuego",
+			"ice": "Elemental de hielo"
+		},
+		"endregas": "Endriagos",
+		"fiend": "Demonibestia",
+		"foglet": "Boira",
+		"foglets": "Boiras",
+		"forktail": "Colihendido",
+		"gargoyle": "Gárgola",
+		"gargoyles": "Gárgolas",
+		"ghost": "Fantasma",
+		"ghouls": "Ghuls",
+		"golem": "Gólem",
+		"griffin": "Grifo",
+		"hag": {
+			"bilge": "Bruja de sentina",
+			"grave": "Bruja sepulcral",
+			"water": "Bruja del agua"
+		},
+		"harpies": "Arpías",
+		"leshen": "Leshen",
+		"mucknixers": "Anegados",
+		"nekkers": "Nekkers",
+		"nekkerWarrior": "Guerrero nekker",
+		"nightwraith": "Aparición nocturna",
+		"noonwraith": "Dama del mediodía",
+		"pirates": "Piratas",
+		"rabidRockTroll": "Trol de piedra rabioso",
+		"rotfiends": "Demonios podridos",
+		"sirens": "Sirenas",
+		"wolves": "Lobos",
+		"wraith": "Aparición",
+		"wraiths": "Apariciones",
+		"wyvern": "Wyverno"
+	},
+	"notice": {
+		"label": "Tablón de anuncios",
+		"desc": "Aquí puedes encontrar contratos de monstruos y avisos sobre asuntos de interés local"
+	},
+	"pid": {
+		"label": "Persona(s) en apuros",
+		"desc": "Aquí hay una persona o un grupo de personas que necesitan ayuda __monster__"
+	},
+	"poi": {
+		"label": {
+			"witcherGear": "Equipo de brujo mejorable"
+		},
+		"desc": {
+			"witcherGear": {
+				"silversword": {
+					"feline": {
+						"standard": "Dentro de las ruinas de Est Tayiar, detrás de un muro que puedes romper",
+						"enhanced": "En el piso de arriba de un edificio; se llega por la escalera junto a la puerta de Oxenfurt",
+						"superior": "Detrás de unas estalagmitas que se pueden romper, en una repisa de piedra del lado derecho de la cueva",
+						"mastercrafted": ""
+					},
+					"griffin": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"ursine": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"wolven": {
+						"standard": "",
+						"enhanced": "Bajando a la cueva",
+						"superior": "",
+						"mastercrafted": "Está cerca del tesoro oculto"
+					}
+				},
+				"steelsword": {
+					"feline": {
+						"standard": "Dentro del castillo de Drahim, bajando la escalera",
+						"enhanced": "Dentro de la cueva, detrás de un pequeño muro de piedra del lado izquierdo",
+						"superior": "Al fondo de la cueva, en un cofre sobre una plataforma de madera",
+						"mastercrafted": ""
+					},
+					"griffin": {
+						"standard": "Cerca del nido de monstruos",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"ursine": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": "Al fondo de una cueva sin marcar, detrás de un pilar de piedra"
+					},
+					"wolven": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": "Está en la bodega del barco hundido"
+					}
+				},
+				"crossbow": {
+					"feline": "",
+					"ursine": ""
+				},
+				"armor": {
+					"feline": {
+						"standard": "",
+						"enhanced": "En lo alto de la mansión abandonada de Aeramas",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"griffin": {
+						"standard": "Dentro de la Gruta del cazador de dragones",
+						"enhanced": "Cerca del trol del Fuerte Águila Blanca",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"ursine": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"wolven": {
+						"standard": "",
+						"enhanced": "Sumérgete en el agua",
+						"superior": "",
+						"mastercrafted": "El cofre está dentro del pozo"
+					}
+				},
+				"boots": {
+					"feline": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"griffin": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"ursine": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"wolven": {
+						"standard": "",
+						"enhanced": "Bajando a la cueva",
+						"superior": "",
+						"mastercrafted": ""
+					}
+				},
+				"gauntlets": {
+					"feline": {
+						"standard": "",
+						"enhanced": "Dentro de un pozo de la Cantera de los Viejos",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"griffin": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"ursine": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"wolven": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					}
+				},
+				"trousers": {
+					"feline": {
+						"standard": "",
+						"enhanced": "Dentro de las Ruinas quemadas",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"griffin": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"ursine": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					},
+					"wolven": {
+						"standard": "",
+						"enhanced": "",
+						"superior": "",
+						"mastercrafted": ""
+					}
+				}
+			}
+		},
+		"popup": {
+			"witcherGear": {
+				"silversword": {
+					"feline": {
+						"standard": "Espada de plata felina",
+						"enhanced": "Espada de plata felina mejorada",
+						"superior": "Espada de plata felina superior",
+						"mastercrafted": "Espada de plata felina magistral"
+					},
+					"griffin": {
+						"standard": "Espada de plata de grifo",
+						"enhanced": "Espada de plata de grifo mejorada",
+						"superior": "Espada de plata de grifo superior",
+						"mastercrafted": "Espada de plata de grifo magistral"
+					},
+					"ursine": {
+						"standard": "Espada de plata osuna",
+						"enhanced": "Espada de plata osuna mejorada",
+						"superior": "Espada de plata osuna superior",
+						"mastercrafted": "Espada de plata osuna magistral"
+					},
+					"wolven": {
+						"standard": "Espada de plata lobuna",
+						"enhanced": "Espada de plata lobuna mejorada",
+						"superior": "Espada de plata lobuna superior",
+						"mastercrafted": "Espada de plata lobuna magistral"
+					}
+				},
+				"steelsword": {
+					"feline": {
+						"standard": "Espada de acero felina",
+						"enhanced": "Espada de acero felina mejorada",
+						"superior": "Espada de acero felina superior",
+						"mastercrafted": "Espada de acero felina magistral"
+					},
+					"griffin": {
+						"standard": "Espada de acero de grifo",
+						"enhanced": "Espada de acero de grifo mejorada",
+						"superior": "Espada de acero de grifo superior",
+						"mastercrafted": "Espada de acero de grifo magistral"
+					},
+					"ursine": {
+						"standard": "Espada de acero osuna",
+						"enhanced": "Espada de acero osuna mejorada",
+						"superior": "Espada de acero osuna superior",
+						"mastercrafted": "Espada de acero osuna magistral"
+					},
+					"wolven": {
+						"standard": "Espada de acero lobuna",
+						"enhanced": "Espada de acero lobuna mejorada",
+						"superior": "Espada de acero lobuna superior",
+						"mastercrafted": "Espada de acero lobuna magistral"
+					}
+				},
+				"crossbow": {
+					"feline": "Ballesta felina",
+					"ursine": "Ballesta osuna"
+				},
+				"armor": {
+					"feline": {
+						"standard": "Armadura felina",
+						"enhanced": "Armadura felina mejorada",
+						"superior": "Armadura felina superior",
+						"mastercrafted": "Armadura felina magistral"
+					},
+					"griffin": {
+						"standard": "Armadura de grifo",
+						"enhanced": "Armadura de grifo mejorada",
+						"superior": "Armadura de grifo superior",
+						"mastercrafted": "Armadura de grifo magistral"
+					},
+					"ursine": {
+						"standard": "Armadura osuna",
+						"enhanced": "Armadura osuna mejorada",
+						"superior": "Armadura osuna superior",
+						"mastercrafted": "Armadura osuna magistral"
+					},
+					"wolven": {
+						"standard": "Armadura lobuna",
+						"enhanced": "Armadura lobuna mejorada",
+						"superior": "Armadura lobuna superior",
+						"mastercrafted": "Armadura lobuna magistral"
+					}
+				},
+				"boots": {
+					"feline": {
+						"standard": "Botas felinas",
+						"enhanced": "Botas felinas mejoradas",
+						"superior": "Botas felinas superiores",
+						"mastercrafted": "Botas felinas magistrales"
+					},
+					"griffin": {
+						"standard": "Botas de grifo",
+						"enhanced": "Botas de grifo mejoradas",
+						"superior": "Botas de grifo superiores",
+						"mastercrafted": "Botas de grifo magistrales"
+					},
+					"ursine": {
+						"standard": "Botas osunas",
+						"enhanced": "Botas osunas mejoradas",
+						"superior": "Botas osunas superiores",
+						"mastercrafted": "Botas osunas magistrales"
+					},
+					"wolven": {
+						"standard": "Botas lobunas",
+						"enhanced": "Botas lobunas mejoradas",
+						"superior": "Botas lobunas superiores",
+						"mastercrafted": "Botas lobunas magistrales"
+					}
+				},
+				"gauntlets": {
+					"feline": {
+						"standard": "Guanteletes felinos",
+						"enhanced": "Guanteletes felinos mejorados",
+						"superior": "Guanteletes felinos superiores",
+						"mastercrafted": "Guanteletes felinos magistrales"
+					},
+					"griffin": {
+						"standard": "Guanteletes de grifo",
+						"enhanced": "Guanteletes de grifo mejorados",
+						"superior": "Guanteletes de grifo superiores",
+						"mastercrafted": "Guanteletes de grifo magistrales"
+					},
+					"ursine": {
+						"standard": "Guanteletes osunos",
+						"enhanced": "Guanteletes osunos mejorados",
+						"superior": "Guanteletes osunos superiores",
+						"mastercrafted": "Guanteletes osunos magistrales"
+					},
+					"wolven": {
+						"standard": "Guanteletes lobunos",
+						"enhanced": "Guanteletes lobunos mejorados",
+						"superior": "Guanteletes lobunos superiores",
+						"mastercrafted": "Guanteletes lobunos magistrales"
+					}
+				},
+				"trousers": {
+					"feline": {
+						"standard": "Pantalones felinos",
+						"enhanced": "Pantalones felinos mejorados",
+						"superior": "Pantalones felinos superiores",
+						"mastercrafted": "Pantalones felinos magistrales"
+					},
+					"griffin": {
+						"standard": "Pantalones de grifo",
+						"enhanced": "Pantalones de grifo mejorados",
+						"superior": "Pantalones de grifo superiores",
+						"mastercrafted": "Pantalones de grifo magistrales"
+					},
+					"ursine": {
+						"standard": "Pantalones osunos",
+						"enhanced": "Pantalones osunos mejorados",
+						"superior": "Pantalones osunos superiores",
+						"mastercrafted": "Pantalones osunos magistrales"
+					},
+					"wolven": {
+						"standard": "Pantalones lobunos",
+						"enhanced": "Pantalones lobunos mejorados",
+						"superior": "Pantalones lobunos superiores",
+						"mastercrafted": "Pantalones lobunos magistrales"
+					}
+				}
+			}
+		}
+	},
+	"pop": {
+		"label": "Lugar de poder",
+		"label*": "Lugar de poder*",
+		"desc": "Recurre a un Lugar de poder para obtener una bonificación temporal. La primera vez que recurras a cualquier Lugar de poder, también recibirás 1 punto de habilidad",
+		"popup": "Lugar de poder - __sign__"
+	},
+	"smugglers": {
+		"label": "Alijo de contrabandistas",
+		"desc": "Aquí se escondieron mercancías de contrabando. "
+	},
+	"spoils": {
+		"label": "Botín de guerra",
+		"desc": "Busca aquí el botín que quedó tras una batalla o escaramuza __monster__"
+	},
+	"signs": {
+		"aard": "Aard",
+		"axii": "Axii",
+		"igni": "Igni",
+		"quen": "Quen",
+		"yrden": "Yrden"
+	},
+	"vineyardinfestation": {
+		"label": "Plaga en el viñedo",
+		"desc": "Viñedo infestado de monstruos."
+	}
+}

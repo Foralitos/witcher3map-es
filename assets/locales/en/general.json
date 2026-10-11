@@ -95,7 +95,9 @@
 		"portraitWarn": "Note: the map is best viewed in landscape mode, tap to dismiss",
 		"loveInterestDesc": "Meet your love interest here",
 		"nsfwConfirm": "This will change 'Brothel' to 'Love Interest', are you sure?",
-		"nsfwUndo": "Are you sure you want to go back?"
+		"nsfwUndo": "Are you sure you want to go back?",
+		"and": "and",
+		"availableAfterMasterArmorers": "Available after the &#39;Master Armorers&#39; (lvl 26) quest. "
 	},
 	"abandoned": {
 		"label": "Abandoned Site",

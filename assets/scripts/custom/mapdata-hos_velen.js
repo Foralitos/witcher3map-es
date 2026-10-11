@@ -26,7 +26,7 @@ window.mapdata_hos_velen = {
 	}, {
 		coords: [[122.281, 179.266]],
 		label: $.t("abandoned.label"),
-		popup: $.t("abandoned.desc") + '(lvl 9<span> ' + $.t("v:monsters.ghouls") + '</span> and lvl 11<span> ' + $.t("v:monsters.alghoul") + '</span>)'
+		popup: $.t("abandoned.desc") + '(lvl 9<span> ' + $.t("v:monsters.ghouls") + '</span> ' + $.t("misc.and") + ' lvl 11<span> ' + $.t("v:monsters.alghoul") + '</span>)'
 	}, { // SW Velen
 		coords: [[29.984, 48.000]],
 		label: $.t("abandoned.label"),
@@ -418,7 +418,7 @@ window.mapdata_hos_velen = {
 	}, { // NW Velen
 		coords: [[131.297, 69.172]],
 		label: $.t("guarded.label"),
-		popup: 'Available after the \'Master Armorers\' (lvl 26) quest. ' + $.t("guarded.desc", {monster: "(lvl 19<span> " + $.t("v:monsters.cyclops") + "</span>)"})
+		popup: $.t("misc.availableAfterMasterArmorers") + $.t("guarded.desc", {monster: "(lvl 19<span> " + $.t("v:monsters.cyclops") + "</span>)"})
 	}, {
 		coords: [[70.859, 44.063]],
 		label: $.t("guarded.label"),
@@ -894,7 +894,7 @@ window.mapdata_hos_velen = {
 	}, { // S Novigrad
 		coords: [[165.891, 99.375]],
 		label: $.t("monsterden.label"),
-		popup: $.t("monsterden.desc", {monster: '(lvl 16<span> ' + $.t("v:monsters.rabidRockTroll") + '</span> and lvl 18<span> ' + $.t("v:monsters.nekkers") + '</span>)'})
+		popup: $.t("monsterden.desc", {monster: '(lvl 16<span> ' + $.t("v:monsters.rabidRockTroll") + '</span> ' + $.t("misc.and") + ' lvl 18<span> ' + $.t("v:monsters.nekkers") + '</span>)'})
 	}],
 
 	// Monster Nest

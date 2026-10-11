@@ -1,0 +1,38 @@
+{
+	"monsters": {
+		"basilisk": "Basilisco",
+		"cyclops": "Cíclope",
+		"drowners": "Sumergidos",
+		"endrega": "Endriago",
+		"gargoyles": "Gárgolas",
+		"ghost": "Fantasma",
+		"harpies": "Arpías",
+		"leshen": "Leshen",
+		"nekkers": "Nekkers",
+		"nekkerWarrior": "Guerrero nekker",
+		"wolves": "Lobos",
+		"wraiths": {
+			"wraiths": "Apariciones",
+			"wraith": "Aparición"
+		},
+		"wyvern": "Wyverno"
+	},
+	"poi": {
+	},
+	"signpost": {
+		"label": {
+			"bastion": "Bastión",
+			"ironMine": "Mina de hierro",
+			"kaerMorhen": "Kaer Morhen",
+			"lakesideHut": "Cabaña junto al lago",
+			"ruinedWatchtower": "Atalaya en ruinas"
+		},
+		"desc": {
+			"bastion": "Aquí entrenaban antaño los jóvenes brujos. Hoy el bastión es una ruina olvidada.",
+			"ironMine": "De este lugar se extraía mineral de hierro para las forjas de la Escuela del Lobo.",
+			"kaerMorhen": "La fortaleza del Mar de Antaño, hogar de los brujos de la Escuela del Lobo.",
+			"lakesideHut": "Hace una docena de años vivía aquí un ermitaño que preparaba un hidromiel excelente. Los brujos lo visitaban de vez en cuando para charlar sobre tierras lejanas.",
+			"ruinedWatchtower": "Esta atalaya junto al lago fue en su día el orgullo de los brujos de la Escuela del Lobo; hoy está en ruinas y solo se oye el viento silbando entre sus piedras."
+		}
+	}
+}
