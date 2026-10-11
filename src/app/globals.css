@@ -1,0 +1,81 @@
+@import 'tailwindcss';
+
+@font-face {
+	font-family: 'PFDinTextCondPro';
+	src: url('/fonts/pfdin-bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'PFDinTextCondPro';
+	src: url('/fonts/pfdin.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@theme {
+	--color-gold: #f0cb0b;
+	--color-gold-dim: #907854;
+	--font-sans: 'PFDinTextCondPro', Arial, sans-serif;
+}
+
+body {
+	color: #fff;
+	font-family: var(--font-sans);
+}
+
+/* Leaflet: fondo negro y popups/labels con el estilo del original */
+.witcher-map.leaflet-container {
+	background: #000;
+	font-family: var(--font-sans);
+}
+.witcher-map .leaflet-tooltip {
+	background: rgba(0, 0, 0, 0.7);
+	border: none;
+	box-shadow: none;
+	color: #fff;
+	font-size: 13px;
+}
+.witcher-map .leaflet-tooltip::before {
+	display: none;
+}
+.witcher-map .leaflet-popup-content-wrapper,
+.witcher-map .leaflet-popup-tip {
+	background: rgba(0, 0, 0, 0.92);
+	border: 1px solid #635540;
+	color: #ddd;
+	box-shadow: none;
+}
+.witcher-map .leaflet-popup-content {
+	font-size: 14px;
+	line-height: 1.35;
+}
+.witcher-map .leaflet-popup-content h1 {
+	color: #f0cb0b;
+	font-size: 17px;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+.witcher-map .leaflet-popup-content a {
+	color: #f0cb0b;
+}
+.witcher-map .leaflet-popup-content span {
+	color: #c9a96b;
+}
+.witcher-map.hide-monsters .leaflet-popup-content span {
+	display: none;
+}
+.witcher-map .leaflet-container a.leaflet-popup-close-button,
+.witcher-map a.leaflet-popup-close-button {
+	color: #907854;
+}
+.witcher-map .leaflet-bar a {
+	background: rgba(0, 0, 0, 0.85);
+	border-color: #635540;
+	color: #907854;
+}
+.witcher-map .leaflet-bar a:hover {
+	color: #f0cb0b;
+}

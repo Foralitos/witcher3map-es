@@ -1,0 +1,240 @@
+{
+	"note_marker": {
+		"file": "note_marker",
+		"size": [
+			23,
+			28
+		]
+	},
+	"abandoned": {
+		"file": "abandoned",
+		"size": [
+			30,
+			30
+		]
+	},
+	"alchemy": {
+		"file": "alchemy",
+		"size": [
+			20,
+			28
+		]
+	},
+	"armourer": {
+		"file": "armourer",
+		"size": [
+			24,
+			34
+		]
+	},
+	"armourerstable": {
+		"file": "armourerstable",
+		"size": [
+			30,
+			27
+		]
+	},
+	"banditcamp": {
+		"file": "banditcamp",
+		"size": [
+			29,
+			30
+		]
+	},
+	"barber": {
+		"file": "barber",
+		"size": [
+			30,
+			30
+		]
+	},
+	"hansebase": {
+		"file": "hansebase",
+		"size": [
+			29,
+			30
+		]
+	},
+	"blacksmith": {
+		"file": "blacksmith",
+		"size": [
+			27,
+			30
+		]
+	},
+	"brothel": {
+		"file": "brothel",
+		"size": [
+			28,
+			26
+		]
+	},
+	"entrance": {
+		"file": "entrance",
+		"size": [
+			28,
+			27
+		]
+	},
+	"grindstone": {
+		"file": "grindstone",
+		"size": [
+			30,
+			26
+		]
+	},
+	"guarded": {
+		"file": "guarded",
+		"size": [
+			23,
+			34
+		]
+	},
+	"gwent": {
+		"file": "gwent",
+		"size": [
+			24,
+			30
+		]
+	},
+	"harbor": {
+		"file": "harbor",
+		"size": [
+			27,
+			30
+		]
+	},
+	"herbalist": {
+		"file": "herbalist",
+		"size": [
+			25,
+			28
+		]
+	},
+	"hidden": {
+		"file": "hidden",
+		"size": [
+			23,
+			34
+		]
+	},
+	"innkeep": {
+		"file": "tavern",
+		"size": [
+			26,
+			30
+		]
+	},
+	"kid": {
+		"file": "kid",
+		"size": [
+			28,
+			30
+		]
+	},
+	"monsterden": {
+		"file": "monsterden",
+		"size": [
+			30,
+			27
+		]
+	},
+	"monsternest": {
+		"file": "monsternest",
+		"size": [
+			23,
+			30
+		]
+	},
+	"notice": {
+		"file": "notice",
+		"size": [
+			23,
+			28
+		]
+	},
+	"pid": {
+		"file": "pid",
+		"size": [
+			24,
+			34
+		]
+	},
+	"pop": {
+		"file": "pop",
+		"size": [
+			27,
+			30
+		]
+	},
+	"poi": {
+		"file": "poi",
+		"size": [
+			28,
+			28
+		]
+	},
+	"shopkeeper": {
+		"file": "merchant",
+		"size": [
+			21,
+			30
+		]
+	},
+	"signalfire": {
+		"file": "signalfire",
+		"size": [
+			17,
+			34
+		]
+	},
+	"signpost": {
+		"file": "fasttravel",
+		"size": [
+			27,
+			34
+		]
+	},
+	"smugglers": {
+		"file": "smugglers",
+		"size": [
+			28,
+			30
+		]
+	},
+	"sidequests": {
+		"file": "sidequests",
+		"size": [
+			10,
+			30
+		]
+	},
+	"contracts": {
+		"file": "tempcontract",
+		"size": [
+			18,
+			29
+		]
+	},
+	"vineyardinfestation": {
+		"file": "vineyardinfestation",
+		"size": [
+			28,
+			32
+		]
+	},
+	"vintnercontract": {
+		"file": "vintnercontract",
+		"size": [
+			23,
+			34
+		]
+	},
+	"spoils": {
+		"file": "spoils",
+		"size": [
+			25,
+			28
+		]
+	}
+}
